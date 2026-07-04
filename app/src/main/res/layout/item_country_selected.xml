@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_country_selected.xml -->
+<!-- The view shown when dropdown is closed (selected item) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="14dp"
+    android:background="@drawable/spinner_background"
+    android:paddingEnd="14dp">
+
+    <ImageView
+        android:id="@+id/ivFlag"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium" />
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:tint="#697E93"
+        android:src="@drawable/ic_arrow_down"/>
+
+</LinearLayout>

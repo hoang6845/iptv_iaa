@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/shape_top_bottom_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:src="@drawable/ic_close"
+        app:tint="?attr/myColorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top"  />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_import_pl"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_close">
+
+        <ImageView
+            android:id="@+id/num_1"
+            app:tint="?attr/myColorOnSurface"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_url"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_import_playlist_url"
+            android:textColor="?attr/textSpecial"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toEndOf="@id/num_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_to_watch_many_tv_channels"
+            android:textColor="?attr/textDescriptionSpecial"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@id/num_1"
+            app:layout_constraintTop_toBottomOf="@id/title_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/btn_import_pl"
+        android:background="#E5E7EB" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_add_xtream"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_1">
+
+        <ImageView
+            android:id="@+id/ic_add_xtream"
+            android:layout_width="@dimen/_24sdp"
+            app:tint="?attr/myColorOnSurface"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_add_xtream"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_add_your_xtream_account"
+            android:textColor="?attr/textSpecial"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_add_xtream"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_to_watch_tv_shows_and_videos"
+            android:textColor="?attr/textDescriptionSpecial"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_add_xtream"
+            app:layout_constraintTop_toBottomOf="@id/title_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_xtream"
+        android:background="#E5E7EB" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_single_stream"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_2">
+
+        <ImageView
+            android:id="@+id/ic_single_stream"
+            android:layout_width="@dimen/_24sdp"
+            app:tint="?attr/myColorOnSurface"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_add_stream"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tt_single_stream"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_add_your_single_stream"
+            android:textColor="?attr/textSpecial"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_single_stream"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_to_watch_live_events_sports_music"
+            android:textColor="?attr/textDescriptionSpecial"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_single_stream"
+            app:layout_constraintTop_toBottomOf="@id/tt_single_stream" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/btn_single_stream"
+        android:background="#E5E7EB" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_upload_m3u"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_3">
+
+        <ImageView
+            android:id="@+id/ic_upload_m3u"
+            android:layout_width="@dimen/_24sdp"
+            app:tint="?attr/myColorOnSurface"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_upload_m3u"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_upload_m3u_file"
+            android:textColor="?attr/textSpecial"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_upload_m3u"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_to_watch_many_tv_channels"
+            android:textColor="?attr/textDescriptionSpecial"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_upload_m3u"
+            app:layout_constraintTop_toBottomOf="@id/title_3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/btn_upload_m3u"
+        android:background="#E5E7EB" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btn_load_video"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_4">
+
+        <ImageView
+            android:id="@+id/ic_up_video"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            app:tint="?attr/myColorOnSurface"
+            android:src="@drawable/ic_up_video"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_load_from_device"
+            android:textColor="?attr/textSpecial"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_up_video"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_235sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_to_watch_many_tv_channels"
+            android:textColor="?attr/textDescriptionSpecial"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@id/ic_up_video"
+            app:layout_constraintTop_toBottomOf="@id/title_4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/how_to_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:fontFamily="@font/inter"
+        android:text="@string/text_how_to_use"
+        android:textColor="@color/color_primary_045DCC"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toBottomOf="@id/btn_load_video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

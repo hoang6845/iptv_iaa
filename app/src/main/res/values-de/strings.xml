@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="text_cmp_setting">Настройки CMP</string>
+    <string name="text_policy">Политика конфиденциальности</string>
+    <string name="text_term_of_use">Условия использования</string>
+    <string name="text_feed_back">Обратная связь</string>
+    <string name="text_rate_5_stars">Оцените на 5 звёзд</string>
+    <string name="text_share_to_your_friend">Поделиться с друзьями</string>
+    <string name="text_language">приложения</string>
+    <string name="text_vibrate">Вибрация</string>
+    <string name="text_sound_fx">Звуковые эффекты</string>
+    <string name="text_music">Музыка</string>
+    <string name="text_home">Главная</string>
+    <string name="text_recent_channel">Недавние каналы</string>
+    <string name="text_playlist">Плейлист</string>
+    <string name="text_channels">Каналы</string>
+    <string name="text_search">Поиск</string>
+    <string name="text_live_tv">Прямой эфир</string>
+    <string name="text_vod">Видео по запросу</string>
+
+    <string-array name="text_first_time">
+        <item>Подготовка, пожалуйста подождите…</item>
+        <item>Подготавливаем приложение…</item>
+        <item>Первая загрузка данных…</item>
+    </string-array>
+    <string name="text_unlimited_playlist_support_m3u_xtream">Unbegrenzte Playlist-Unterstützung (M3U/Xtream)</string>
+    <string name="text_no_ads_no_interruptions">Keine Werbung, keine Unterbrechungen</string>
+    <string name="text_multi_device_sync">Synchronisierung über mehrere Geräte</string>
+    <string name="text_stream_the_world_no_limits">Stream die Welt. Keine Grenzen</string>
+    <string name="text_select_sorting">Sortierung auswählen</string>
+    <string name="text_recently_added">Kürzlich hinzugefügt</string>
+    <string name="text_z_a_sort">Z-A Sortierung</string>
+    <string name="text_none">Keine</string>
+    <string name="loading_text">Приложение загружается…</string>
+    <string name="text_audio">%1$s</string>
+    <string name="explore_now">Исследовать сейчас</string>
+    <string name="text_explore_by_country">Поиск по странам</string>
+    <string name="text_add_a_profile">Добавить профиль</string>
+    <string name="text_url_server">URL сервера</string>
+    <string name="text_username">Имя пользователя</string>
+    <string name="text_password">Пароль</string>
+    <string name="text_add_profile">Добавить профиль</string>
+    <string name="text_who_s_watching">Кто смотрит?</string>
+    <string name="text_details">Детали</string>
+    <string name="text_more_like_this">Похожие</string>
+    <string name="text_trailer">Трейлер</string>
+    <string name="text_now_playing">Сейчас воспроизводится</string>
+    <string name="text_sleep_timer">Таймер сна</string>
+    <string name="text_off">Выкл</string>
+    <string name="text_5_minutes">5 минут</string>
+    <string name="text_10_minutes">10 минут</string>
+    <string name="text_30_minutes">30 минут</string>
+    <string name="text_45_minutes">45 минут</string>
+    <string name="text_1_hour">1 час</string>
+    <string name="text_favourite">Избранное</string>
+    <string name="text_live">Прямой эфир</string>
+    <string name="text_movie_amp_series"><![CDATA[Фильмы и сериалы]]></string>
+    <string name="text_live_channel">Телеканал</string>
+    <string name="text_all">Все</string>
+    <string name="text_url">Ссылка</string>
+    <string name="text_file">Файл</string>
+    <string name="text_gallery">Галерея</string>
+
+    <string name="text_import_your_playlist_url">Импортировать URL плейлиста</string>
+    <string name="text_how_to_add_a_playlist_in_iptv_player">Как добавить плейлист в IPTV Player?</string>
+    <string name="text_find_an_m3u_playlist">Найти M3U плейлист →</string>
+    <string name="text_find_an_m3u_playlist_">Найти M3U плейлист</string>
+
+    <string name="text_search_online_for_a_publicly_available_iptv_playlist_m3u">
+        Найдите в интернете общедоступный IPTV плейлист (M3U)
+    </string>
+
+    <string name="text_copy_the_link_or_download">Скопировать ссылку или скачать →</string>
+    <string name="text_copy_the_link_or_download_">Скопировать ссылку или скачать</string>
+
+    <string name="text_either_copy_the_playlist_link_or_download_the_m3u_file">
+        Скопируйте ссылку на плейлист или скачайте файл .m3u
+    </string>
+
+    <string name="text_import_the_playlist_into_the_app">Импортировать плейлист в приложение →</string>
+    <string name="text_import_the_playlist_into_the_app_">Импортировать плейлист в приложение</string>
+
+    <string name="text_in_the_app_add_playlist_import_url_paste_link">
+        В приложении: Добавить плейлист → Импорт URL → Вставить ссылку
+    </string>
+
+    <string name="text_start_watching">Начать просмотр →</string>
+    <string name="text_use_any_search_engine_and_type_keywords_like_iptv_m3u_playlist_or_follow_instructions_from_your_tv_service_provider">
+        Используйте любой поисковик и введите «IPTV M3U playlist» или следуйте инструкциям вашего провайдера ТВ.
+    </string>
+
+    <string name="text_a_valid_m3u_link_usually_starts_with_http_or_https_ends_with_m3u_or_m3u8">
+        Корректная ссылка M3U обычно:\n начинается с http:// или https://\n заканчивается на .m3u или .m3u8
+    </string>
+
+    <string name="text_whenever_possible_use_reputable_and_legal_sources_some_playlists_may_be_temporary_password_protected_or_geo_restricted">
+        По возможности используйте надёжные и легальные источники. Некоторые плейлисты могут быть временными или ограниченными.
+    </string>
+    <string name="text_to_copy_the_m3u_link_mobile_long_press_the_link_copy_link_desktop_right_click_copy_link_address">
+    Чтобы скопировать ссылку M3U:\n
+    Мобильный: удерживайте ссылку → Копировать ссылку\n
+    ПК: правый клик → Копировать адрес ссылки
+</string>
+
+    <string name="text_to_download_the_file_save_the_m3u_or_m3u8_file_somewhere_easy_to_find">
+    Чтобы скачать файл:\n
+    Сохраните файл .m3u или .m3u8 в удобное место.
+</string>
+
+    <string name="text_you_can_add_the_file_directly_from_your_device_storage_later_see_step_3">
+    Вы можете добавить файл напрямую из памяти устройства позже (см. шаг 3).
+</string>
+
+    <string name="text_open_iptv_smart_player">Откройте IPTV Smart Player.</string>
+    <string name="text_tap_add_playlist">Нажмите «Добавить плейлист».</string>
+
+    <string name="text_choose_one_of_the_following_options_import_url_paste_the_copied_m3u_link_import_m3u_file_select_the_saved_m3u_file_from_your_device_storage">
+    Выберите один из вариантов:\n
+    Импорт URL → вставьте скопированную ссылку M3U.\n
+    Импорт файла M3U → выберите сохранённый файл .m3u.
+</string>
+
+    <string name="text_optional_give_your_playlist_a_name_to_recognize_it_later">
+    (Необязательно) Дайте плейлисту имя для удобства.
+</string>
+
+    <string name="text_tap_save">Нажмите «Сохранить».</string>
+
+    <string name="text_wait_a_few_seconds_for_the_app_to_load_channels_and_categories">
+    Подождите несколько секунд, пока загрузятся каналы и категории.
+</string>
+
+    <string name="text_browse_available_channels_or_use_search_to_find_specific_ones">
+    Просматривайте каналы или используйте поиск.
+</string>
+
+    <string name="text_if_nothing_appears_check_your_internet_connection_make_sure_the_m3u_link_or_file_is_still_valid_and_active">
+    Если ничего не отображается:\n
+    Проверьте интернет-соединение.\n
+    Убедитесь, что ссылка или файл M3U действительны.
+</string>
+
+    <string name="text_import_playlist_url">Импорт URL плейлиста</string>
+    <string name="text_to_watch_many_tv_channels">Для просмотра множества каналов</string>
+    <string name="text_add_your_xtream_account">Добавить Xtream аккаунт</string>
+    <string name="text_to_watch_tv_shows_and_videos">Для просмотра ТВ-шоу и видео</string>
+    <string name="text_add_your_single_stream">Добавить одиночный поток</string>
+    <string name="text_to_watch_live_events_sports_music">Для просмотра прямых событий (спорт, музыка)</string>
+
+    <string name="text_upload_m3u_file">Загрузить файл M3U</string>
+    <string name="text_load_from_device">Загрузить с устройства</string>
+    <string name="text_add_your_playlist">Добавить плейлист</string>
+    <string name="text_import_link">Импорт ссылки</string>
+    <string name="text_upload_file">Загрузить файл</string>
+
+    <string name="text_playlist_name">Название плейлиста</string>
+    <string name="text_enter_playlist_name">Введите название плейлиста</string>
+    <string name="text_playlist_url">URL плейлиста</string>
+    <string name="text_enter_url">Введите URL</string>
+
+    <string name="text_passcode_protection">Защита паролем</string>
+    <string name="text_explore_by_countries">По странам</string>
+    <string name="text_explore_by_categories">По категориям</string>
+    <string name="text_save">Сохранить</string>
+
+    <string name="text_m3u_file">Файл M3U</string>
+    <string name="text_no_file_selected">Файл не выбран</string>
+
+    <string name="text_only_more_file_s_can_be_added_max">
+    Можно добавить ещё %1$d файл(ов) (макс %2$d)
+</string>
+
+    <string name="text_files">%1$d / %2$d файлов</string>
+    <string name="text_please_select_at_least_1_file">Выберите хотя бы 1 файл</string>
+
+    <string name="text_processing">Обработка</string>
+    <string name="text_save_playlist_success">Плейлист успешно сохранён</string>
+
+    <string name="text_connecting">Подключение…</string>
+    <string name="text_downloading">Загрузка…</string>
+    <string name="text_parsing_channels">Обработка каналов…</string>
+    <string name="text_saving">Сохранение…</string>
+
+    <string name="text_connection_error">Ошибка подключения: %1$s</string>
+    <string name="text_no_channels_were_found_at_this_url">По этому URL каналы не найдены</string>
+
+    <string name="text_favourites">Избранное</string>
+    <string name="text_popular_channel">Популярные каналы</string>
+    <string name="text_a_z_sort">Сортировка A-Z</string>
+
+    <string name="text_edit_name">Редактировать имя</string>
+    <string name="text_copy_playlist_url">Скопировать URL плейлиста</string>
+    <string name="text_set_passcode_security">Установить PIN-код</string>
+    <string name="text_delete_playlist">Удалить плейлист</string>
+
+    <string name="text_confirm">Подтвердить</string>
+    <string name="text_cancel">Отмена</string>
+
+    <string name="text_add_single_stream">Добавить поток</string>
+    <string name="text_channel_name">Название канала*</string>
+    <string name="text_enter_channel_name">Введите название канала</string>
+    <string name="text_url_stream">URL потока*</string>
+
+    <string name="text_logo">Логотип канала</string>
+    <string name="text_enter_group">Введите группу</string>
+    <string name="text_upload_video">Загрузить видео</string>
+
+    <string name="text_search_channel">Поиск канала...</string>
+
+    <string name="text_please_enter_server_url">Введите URL сервера</string>
+    <string name="text_please_enter_username">Введите имя пользователя</string>
+    <string name="text_please_enter_password">Введите пароль</string>
+
+    <string name="text_set_passcode">Установить PIN-код</string>
+    <string name="text_use_fingerprint">Использовать отпечаток пальца</string>
+    <string name="text__4_digit_passcode">4-значный PIN-код</string>
+
+    <string name="text_enter_passcode">Введите PIN-код</string>
+
+    <string name="text_do_you_want_to_delete_this_playlist">
+    Вы хотите удалить этот плейлист?
+</string>
+
+    <string name="text_do_you_want_to_delete_this_profile">
+    Вы хотите удалить этот профиль?
+</string>
+
+    <string name="text_delete">Удалить</string>
+    <string name="text_info">Информация</string>
+    <string name="text_play">Воспроизвести</string>
+    <string name="text_watching">Просмотр</string>
+    <string name="text_custom_time">Произвольное время</string>
+    <string name="text_minutes_1_180">Минуты (1–180)</string>
+
+    <string name="text_enter_a_value_from_1_to_180_minutes">
+    Введите значение от 1 до 180 минут
+</string>
+
+    <string name="text_sleep_timer_left">Таймер сна — осталось %1$s</string>
+    <string name="text_no_timer">Нет таймера</string>
+
+    <string name="text__5_minutes">5 минут</string>
+    <string name="text__10_minutes">10 минут</string>
+    <string name="text__15_minutes">15 минут</string>
+    <string name="text__30_minutes">30 минут</string>
+    <string name="text__1_hour">1 час</string>
+
+    <string name="text_custom">⚙ Произвольно...</string>
+
+    <string name="text_refresh">Обновить</string>
+
+    <string name="text_no_channel_were_founded_at_this_url">
+    По этому URL каналы не найдены
+</string>
+
+    <string name="text_playlist_not_found">Плейлист не найден</string>
+
+    <string name="text_playlist_has_no_url_to_update_from">
+    У плейлиста нет URL для обновления
+</string>
+
+    <string name="text_refresh_playlist_success">Плейлист успешно обновлён</string>
+
+    <string name="text_how_to_upload_m3u_file">Как загрузить файл M3U?</string>
+    <string name="text_can_t_find_playlist_url">Не удаётся найти URL плейлиста?</string>
+
+    <string name="text_recent">Недавние</string>
+    <string name="text_new_feature">Новая функция</string>
+
+    <string name="text_xtream_codes_is_the_most_popular_and_used_platform_for_iptv_streaming">
+    Xtream Codes — самая популярная платформа для IPTV
+</string>
+
+    <string name="text_how_to_add_xtream_profile">Как добавить профиль Xtream?</string>
+
+    <string name="text_please_wait_while_we_are_getting_things_ready_for_the_first_time">
+    Пожалуйста, подождите, выполняется первоначальная настройка.
+</string>
+
+    <string name="text_edit_profiles">Редактировать профиль</string>
+    <string name="text_enter_new_pin">Введите новый PIN</string>
+
+    <string name="passcode_enter">Введите PIN-код.</string>
+    <string name="passcode_set_new">Введите новый PIN.</string>
+    <string name="passcode_confirm">Подтвердите новый PIN.</string>
+
+    <string name="text_next">Далее</string>
+    <string name="text_successful">Успешно!</string>
+
+    <string name="text_you_have_successfully_applied_a_pin_password">
+    PIN-код успешно установлен
+</string>
+
+    <string name="text_you_can_change_your_password_at_any_time">
+    Вы можете изменить пароль в любое время
+</string>
+
+    <string name="text_reset_pin">Сбросить PIN</string>
+
+    <string name="text_please_enter_your_passcode_to_continue">
+    Введите PIN-код для продолжения
+</string>
+
+    <string name="text_hello">Здравствуйте, %1$s</string>
+
+    <string name="text_profile">Мой профиль</string>
+    <string name="text_watchlist">Список просмотра</string>
+    <string name="text_general_settings">Основные настройки</string>
+    <string name="text_account">Аккаунт</string>
+
+    <string name="text_choose_avatar">Выбрать аватар</string>
+    <string name="text_select">Выбрать</string>
+    <string name="text_suggested">Рекомендуемые</string>
+
+    <string name="text_duration">Длительность:</string>
+    <string name="text_release_date">Дата выхода:</string>
+    <string name="text_genre">Жанр:</string>
+    <string name="text_rating">Рейтинг:</string>
+    <string name="text_actor">Актёр:</string>
+    <string name="text_cast">Актёры:</string>
+
+    <string name="text_profile_name">Имя профиля</string>
+    <string name="text_passcode_optional">PIN-код (необязательно)</string>
+
+    <string name="text_make_our_playlist_private">Сделать плейлист приватным</string>
+    <string name="text_change_your_passcode">Изменить PIN-код</string>
+
+    <string name="text_remove_profile">Удалить профиль</string>
+    <string name="text_save_success">Сохранено</string>
+    <string name="text_remove_profile_success">Профиль удалён</string>
+
+    <string name="text_remove">Удалить</string>
+    <string name="text_copied">Скопировано</string>
+
+    <string name="text_delete_profile">Удалить профиль</string>
+
+    <string name="passcode_enter_old">Введите текущий PIN</string>
+    <string name="passcode_enter_old_desc">
+    Введите текущий PIN-код для продолжения
+</string>
+
+    <string name="passcode_wrong_old">
+    Неверный PIN-код, попробуйте снова
+</string>
+
+    <string name="biometric_title">Подтверждение профиля</string>
+    <string name="biometric_subtitle">Используйте отпечаток пальца</string>
+    <string name="biometric_use_pin">Использовать PIN</string>
+
+    <string name="text_series">Сериалы</string>
+    <string name="text_movie">Фильм</string>
+    <string name="text_movies">Фильмы</string>
+
+    <string name="text_cast_not_available">Актёры недоступны</string>
+
+    <string name="text_google_play_services_has_not_been_initialized">
+    Google Play Services не инициализированы
+</string>
+
+    <string name="text_ok">ОК</string>
+
+    <string name="text_casting_to_tv">Трансляция на ТВ</string>
+
+    <string name="text_what_would_you_like_to_do">
+    Что вы хотите сделать?
+</string>
+
+    <string name="text_disconnect">Отключиться</string>
+    <string name="text_restart_from_beginning">Начать сначала</string>
+
+    <string name="text_failed_to_connect_to_cast_device">
+    Не удалось подключиться к устройству
+</string>
+
+    <string name="text_end_timer_pause_playback">
+    Таймер завершён. Воспроизведение приостановлено
+</string>
+
+    <string name="text_how_to_use">Как использовать?</string>
+
+    <string name="text_this_app_is_a_media_player_application_and_does_not_provide_any_content">
+    Это приложение является медиаплеером и не предоставляет контент
+</string>
+
+    <string name="text_how_to_add_a_playlist">Как добавить плейлист</string>
+    <string name="text_4_enjoy_your_iptv_shows">4. Наслаждайтесь IPTV!</string>
+
+    <string name="text_search_in_browser">Искать в браузере</string>
+
+    <string name="text_playlist_cap">ПЛЕЙЛИСТ</string>
+    <string name="text_xtream_cap">XTREAM</string>
+    <string name="text_file_cap">ФАЙЛ</string>
+
+    <string name="text_how_to_add_a_xtream_account">Как добавить Xtream аккаунт</string>
+
+    <string name="text_enjoy_your_shows_browse_through_the_categories_and_start_watching">
+    Наслаждайтесь просмотром! Откройте категории и начните смотреть
+</string>
+
+    <string name="text_tips_if_login_fails_the_server_might_be_expired_or_at_its_user_limit_try_a_different_set_of_credentials">
+    Совет: если вход не удался, сервер может быть недоступен или переполнен. Попробуйте другие данные.
+</string>
+
+    <string name="text_how_to_add_a_file">Как добавить файл</string>
+    <string name="text_2_download_the_file">2. Скачайте файл</string>
+
+    <string name="text_3_go_back_to_the_app_browse_your_device_storage_and_select_the_file">
+    3. Вернитесь в приложение и выберите файл из памяти устройства
+</string>
+
+    <string name="text_autoplay_next_episode">Автовоспроизведение следующей серии</string>
+    <string name="text_auto_update_when_open_app">Автообновление при запуске</string>
+
+    <string name="text_status">Статус</string>
+    <string name="text_created_date">Дата создания</string>
+    <string name="text_expiry_date">Дата окончания</string>
+
+    <string name="text_active">Активен</string>
+    <string name="text_expired">Истёк</string>
+
+    <string name="text_switch_account">Сменить аккаунт</string>
+    <string name="text_continue">Продолжить</string>
+
+    <string name="text_get_started">Начать</string>
+    <string name="text_start_free_now">Начать бесплатно</string>
+
+    <string name="text_weekly">Еженедельно</string>
+    <string name="text_3_days_free_trial">3 дня бесплатно</string>
+    <string name="text_yearly">Ежегодно</string>
+
+    <string name="text_save_up_to_99">Экономия до 99%</string>
+
+    <string name="text_lifetime">Навсегда</string>
+    <string name="text_onetime_payment">Разовый платёж</string>
+
+    <string name="text__3_day_free_trial_n_auto_renewal_cancel_anytime">
+    3 дня бесплатно,\n автопродление — отмена в любое время
+</string>
+
+    <string name="text_terms_of_service">Условия обслуживания</string>
+    <string name="text_privacy_policy">Политика конфиденциальности</string>
+
+    <string name="text_best_deal">ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ</string>
+    <string name="text_suggestion">Рекомендация</string>
+
+    <string name="text_you_haven_t_added_any_channels_to_favorites_yet">
+    Вы ещё не добавили каналы в избранное
+</string>
+
+    <string name="text_premium_access">Премиум доступ</string>
+    <string name="text_remove_all_ads">Удалить рекламу</string>
+    <string name="text_unlock_all_xtream">Разблокировать весь Xtream</string>
+
+    <string name="text_unlimited_playlists_amp_live_tv"><![CDATA[Неограниченные плейлисты и ТВ]]></string>
+
+    <string name="text_no_payment_now">Без оплаты сейчас</string>
+
+    <string name="text_search_for">Искать</string>
+    <string name="text_in_any_search_engine">в любом поисковике</string>
+
+    <string name="text_quot_m3u_file_quot">"M3U файл"</string>
+    <string name="text_free_popular_xtream">"Бесплатный Xtream аккаунт"</string>
+    <string name="text_free_popular_playlist">"Бесплатный IPTV плейлист"</string>
+
+    <string name="text_copy_the">Скопируйте</string>
+    <string name="text_quot_m3u_quot">".m3u"</string>
+
+    <string name="text_playlist_link_or_download_the_file">
+    ссылку на плейлист или скачайте файл
+</string>
+
+    <string name="text_premium">Премиум</string>
+    <string name="text_access">Доступ</string>
+
+    <string name="text_time_remaining">(Осталось времени: %1$s)</string>
+
+    <string name="text_get_now">Получить сейчас</string>
+
+    <string name="text_2_find_and_copy_the">2. Найдите и скопируйте</string>
+    <string name="text_host_username_and_password">хост, имя пользователя и пароль</string>
+
+    <string name="text_of_the_xtream_account">от Xtream аккаунта</string>
+
+    <string name="text_3_go_back_to_the_app_click">
+    3. Вернитесь в приложение и нажмите
+</string>
+
+    <string name="text_quot_add_quot">"Добавить"</string>
+
+    <string name="text_button_then_select">
+    кнопку, затем выберите
+</string>
+
+    <string name="text_quot_add_your_xtream_account_quot">
+    "Добавить Xtream аккаунт"
+</string>
+
+    <string name="text_and_paste_the_link">и вставьте данные</string>
+
+    <string name="text_account_already_exists">Аккаунт уже существует</string>
+    <string name="text_this_account_already_exists">Этот аккаунт уже добавлен</string>
+
+    <string name="text_how_to_import_a_playlist">Как импортировать плейлист</string>
+
+    <string name="text_email_us">Написать нам</string>
+    <string name="text_review_app">Оценить приложение</string>
+    <string name="text_share_this_app">Поделиться приложением</string>
+
+    <string name="text_manage_subscription">Управление подпиской</string>
+
+    <string name="text_term_conditions"><![CDATA[Условия и положения]]></string>
+    <string name="text_license_agreement">Лицензионное соглашение</string>
+
+    <string name="text_update_content">Обновить контент</string>
+
+    <string name="text_this_movie_is_not_available">Этот фильм недоступен</string>
+    <string name="text_this_series_is_not_available">Этот сериал недоступен</string>
+
+    <string name="text_update_success">Обновление успешно</string>
+
+    <string name="text_loading_current_data">Загрузка данных...</string>
+    <string name="text_merging_channels">Объединение каналов...</string>
+
+    <string name="text_merge_movie">Объединить фильмы</string>
+    <string name="text_show_movie_name">Показать название фильма</string>
+    <string name="text_hide_movie_name">Скрыть название фильма</string>
+
+    <string name="text_delete_recent_channel">Удалить недавний канал</string>
+
+    <string name="text_no_playlist_found">Плейлисты не найдены</string>
+
+    <string name="text_create_a_new_playlist_by_tapping_the_action_button_bellow">
+    Создайте новый плейлист, нажав кнопку ниже
+</string>
+
+    <string name="text_no_channels_found">Каналы не найдены</string>
+
+    <string name="text_categories">%1$d категорий</string>
+
+    <string name="text_dark_mode">Тёмный режим</string>
+    <string name="text_start_watching_now">Jetzt ansehen</string>
+    <string name="text_playlist_already_exists">Playlist existiert bereits</string>
+    <string name="text_play_single_stream">Einzelnen Stream abspielen</string>
+    <string name="text_stream_link">Stream-Link</string>
+    <string name="text_support_network_protocols_http_ftp_rtsp_rtp_udp">Unterstützte Netzwerkprotokolle: http, ftp, rtsp, rtp, udp,...</string>
+    <string name="text_back">Zurück</string>
+    <string name="text_cannot_play_stream">Stream kann nicht abgespielt werden</string>
+    <string name="text_the_stream_url_is_unavailable_or_invalid_please_try_reloading_or_go_back">Die Stream-URL ist nicht verfügbar oder ungültig.\nBitte versuchen Sie es erneut oder gehen Sie zurück.</string>
+    <string name="text_enter_4_digit_passcode">4-stelligen Passcode eingeben</string>
+    <string name="text_confirm_passcode">Passcode bestätigen</string>
+    <string name="text_please_wait_a_moment">Bitte warten Sie einen Moment</string>
+    <string name="text_your_watchlist_is_empty">Ihre Watchlist ist leer</string>
+    <string name="text_items_you_save_to_your_watchlist_will_be_shown_here">Elemente, die Sie speichern, werden hier angezeigt.</string>
+    <string name="text_invalid_server_url">Ungültige Server-URL.</string>
+    <string name="text_checking_url">URL wird überprüft...</string>
+    <string name="text_url_error">URL-Fehler</string>
+    <string name="text_week">$%1$s/Woche</string>
+    <string name="text_w_week">Woche</string>
+    <string name="text_month">Monat</string>
+    <string name="text_year">Jahr</string>
+    <string name="free_trial_name">%1$s Tage kostenlose Testversion</string>
+    <string name="text_monthly">Monatlich</string>
+    <string name="text_onetime">einmalig</string>
+    <string name="text_congratulation">Glückwunsch</string>
+    <string name="text_you_have_successfully_upgraded_to_premium">Sie haben erfolgreich auf Premium aktualisiert!</string>
+    <string name="text_an_error_occurred_please_try_again_later">Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.</string>
+    <string name="text_waiting_for_billing_connection">Warten auf Rechnungsverbindung!</string>
+    <string name="text_no_product_selected">Kein Produkt ausgewählt</string>
+    <string name="text_are_you_sure_you_want_to_skip_the_free_trial">Sind Sie sicher, dass Sie die kostenlose Testversion überspringen möchten?</string>
+    <string name="text_claim_your_free_trial_now_without_paying">Fordern Sie jetzt Ihre kostenlose Testversion ohne Zahlung an</string>
+    <string name="text_start_free_trial">Kostenlose Testversion starten</string>
+    <string name="text_not_now">Nicht jetzt</string>
+    <string name="text_import_m3u_m3u8_urls_to_watch_instantly">Importieren Sie M3U/M3U8-URLs, um sofort zu schauen</string>
+    <string name="text_add_favorite_channels_and_personalize_your_playlist_unlimitedly">Fügen Sie Lieblingssender hinzu und personalisieren Sie Ihre Playlist unbegrenzt</string>
+    <string name="text_pro_xtream_integration">Pro Xtream Integration</string>
+    <string name="text_experience_the_full_interface_just_like_a_real_smart_tv">Erleben Sie die vollständige Benutzeroberfläche wie bei einem echten Smart-TV</string>
+    <string name="text_stream_the_world_in_your_hands">Die Welt in Ihren Händen streamen</string>
+    <string name="text_start">Starten</string>
+    <string name="text__3_day_free">3 Tage kostenlos</string>
+    <string name="text_trial">Testversion</string>
+    <string name="text_choose_country">Land auswählen</string>
+</resources>

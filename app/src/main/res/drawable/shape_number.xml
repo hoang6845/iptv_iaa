@@ -1,0 +1,26 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient border -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="?attr/colorPrimaryVariant"
+                android:endColor="?attr/colorPrimary"
+                android:angle="45"/>
+        </shape>
+    </item>
+
+    <!-- Inner transparent circle -->
+    <item
+        android:left="@dimen/_1sdp"
+        android:top="@dimen/_1sdp"
+        android:right="@dimen/_1sdp"
+        android:bottom="@dimen/_1sdp">
+
+        <shape android:shape="oval">
+            <solid android:color="?attr/colorBgBox"/>
+        </shape>
+
+    </item>
+
+</layer-list>

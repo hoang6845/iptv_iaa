@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/myColorSurface"
+    android:paddingBottom="@dimen/_60sdp"
+    android:clipToPadding="false"
+    tools:context=".ui.home.home_all.HomeAllFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/_36sdp"
+            android:clipToPadding="false"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bg_import_pl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img"
+                    android:layout_width="@dimen/_275sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/img_add_playlist"
+                    app:layout_constraintDimensionRatio="1312:808"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+ />
+
+                <ImageView
+                    android:id="@+id/item_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    app:layout_constraintDimensionRatio="1384:80"
+                    android:src="@drawable/img_category"
+                    app:layout_constraintTop_toBottomOf="@id/img" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/shape_bg_add_pl"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    app:layout_constraintDimensionRatio="1352:532"
+                    app:layout_constraintTop_toBottomOf="@id/item_category">
+
+
+
+                    <TextView
+                        android:id="@+id/title_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/text_add_your_playlist"
+                        android:textColor="@color/white"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:textSize="@dimen/_14ssp" />
+
+
+                    <TextView
+                        android:id="@+id/descrip_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/text_stream_10_000_movies_tv_show"
+                        android:textColor="#7E838F"
+                        app:layout_constraintTop_toBottomOf="@id/title_add"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:textSize="@dimen/_8ssp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintDimensionRatio="239:50"
+                        android:background="@drawable/bg_btn_add"
+                        android:gravity="center"
+                        android:id="@+id/btn_import_pl"
+                        app:layout_constraintTop_toBottomOf="@id/descrip_1"
+                        android:layout_marginHorizontal="@dimen/_36sdp"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:src="@drawable/ic_add_pl" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/inter"
+                            android:text="@string/text_import_playlist"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_how_to_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="@string/text_how_to_add_a_playlist_in_iptv_player"
+                android:textColor="?attr/textHint"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg_import_pl"
+                app:layout_constraintWidth_percent="0.88" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_guide_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_how_to_add">
+
+                <TextView
+                    android:id="@+id/num_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_number"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:textStyle="bold"
+                    android:text="1"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_18ssp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/inter"
+                    android:textStyle="bold"
+                    android:text="@string/text_find_an_m3u_playlist"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@id/num_1"
+                    app:layout_constraintTop_toTopOf="@id/num_1" />
+
+                <TextView
+                    android:layout_width="@dimen/_235sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/text_search_online_for_a_publicly_available_iptv_playlist_m3u"
+                    android:textColor="?attr/textHint"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toEndOf="@id/num_1"
+                    app:layout_constraintTop_toBottomOf="@id/title_1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_guide_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_guide_1">
+
+                <TextView
+                    android:id="@+id/num_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_number"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:textStyle="bold"
+                    android:text="2"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_18ssp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/text_copy_the_link_or_download"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@id/num_2"
+                    app:layout_constraintTop_toTopOf="@id/num_2" />
+
+                <TextView
+                    android:layout_width="@dimen/_235sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/text_either_copy_the_playlist_link_or_download_the_m3u_file"
+                    android:textColor="?attr/textHint"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toEndOf="@id/num_2"
+                    app:layout_constraintTop_toBottomOf="@id/title_2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_guide_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_guide_2">
+
+                <TextView
+                    android:id="@+id/num_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_number"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:textStyle="bold"
+                    android:text="3"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_18ssp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/text_import_the_playlist_into_the_app"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@id/num_3"
+                    app:layout_constraintTop_toTopOf="@id/num_3" />
+
+                <TextView
+                    android:layout_width="@dimen/_235sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/text_in_the_app_add_playlist_import_url_paste_link"
+                    android:textColor="?attr/textHint"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toEndOf="@id/num_3"
+                    app:layout_constraintTop_toBottomOf="@id/title_3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_guide_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_guide_3">
+
+                <TextView
+                    android:id="@+id/num_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_number"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:padding="@dimen/_1sdp"
+                    android:textStyle="bold"
+                    android:text="4"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_18ssp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/inter"
+                    android:textStyle="bold"
+                    android:text="@string/text_start_watching"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toEndOf="@id/num_4"
+                    app:layout_constraintTop_toTopOf="@id/num_4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_data"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_favourite"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:src="@drawable/img_favourite_channel"
+                app:layout_constraintDimensionRatio="116:83"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="@string/text_favourites"
+                android:textColor="?attr/myColorOnSurface"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toTopOf="@id/tv_num_channel"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/ic_favourite"
+                app:layout_constraintTop_toTopOf="@id/ic_favourite" />
+
+            <TextView
+                android:id="@+id/tv_num_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp"
+                tools:text="0 channels"
+                app:layout_constraintBottom_toBottomOf="@id/ic_favourite"
+                app:layout_constraintStart_toEndOf="@id/ic_favourite"
+                app:layout_constraintTop_toBottomOf="@id/tv_favourite" />
+
+            <View
+                android:id="@+id/btn_go_favourite"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="@id/ic_favourite"
+                app:layout_constraintEnd_toEndOf="@id/tv_favourite"
+                app:layout_constraintTop_toTopOf="@id/ic_favourite"
+                app:layout_constraintBottom_toBottomOf="@id/ic_favourite" />
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                app:layout_constraintTop_toTopOf="@id/ic_favourite"
+                app:layout_constraintBottom_toBottomOf="@id/ic_favourite"
+                android:src="@drawable/ic_pin"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_24sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_playlist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:visibility="gone"
+                android:paddingBottom="@dimen/_80sdp"
+                android:clipToPadding="false"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                tools:listitem="@layout/item_playlist"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ic_favourite" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_close_external" type="id" />
+    <item name="tag_scroll_listener_added" type="id"/>
+</resources>

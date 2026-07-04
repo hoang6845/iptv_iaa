@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/spinner_background.xml -->
+<!-- Rounded border background for the Spinner (closed state) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#E9F6FF" />
+
+    <stroke
+        android:width="1.5dp"
+        android:color="?attr/myColorPrimary" />
+
+    <corners android:radius="@dimen/_8sdp" />
+
+</shape>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:elevation="@dimen/_16dp">
+
+
+    <ImageView
+        android:id="@+id/bg_dialog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_default_dialog_w"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/ic_dialog"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_reward_video" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text="@string/text_daily_free_limit_reached"
+        android:textColor="?attr/myColorOnSurface"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+        app:layout_constraintStart_toStartOf="@id/text_name"
+        app:layout_constraintTop_toBottomOf="@id/ic_dialog" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+        android:textColor="#2E2933"
+        android:textSize="@dimen/_14ssp"
+        android:paddingVertical="@dimen/_6sdp"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text="@string/text_watch_a_short_ad_and_get_1_free_profile_import"
+        app:layout_constraintStart_toStartOf="@id/bg_dialog"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/btn_unlock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toStartOf="@id/text_name"
+        android:background="@drawable/bg_btn_dialog"
+        android:paddingVertical="@dimen/_4sdp"
+        android:paddingHorizontal="@dimen/_6sdp"
+        app:layout_constraintDimensionRatio="298:47"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:text="@string/text_get_now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/text_name"
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_tomorrow"
+        app:layout_constraintTop_toBottomOf="@id/btn_unlock"
+        app:layout_constraintStart_toStartOf="@id/text_name"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/text_name"
+        android:text="@string/text_i_ll_be_back_tomorrow"
+        android:textColor="#676767"
+        android:textSize="@dimen/_12ssp" />
+
+    <ImageView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:id="@+id/btn_close"
+        app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+        app:layout_constraintTop_toTopOf="@id/bg_dialog"
+        android:src="@drawable/ic_close_dialog_w"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

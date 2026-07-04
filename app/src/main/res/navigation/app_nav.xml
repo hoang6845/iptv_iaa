@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+<!--    <fragment-->
+<!--        android:id="@+id/languageAppFragment"-->
+<!--        android:name="com.iptvplayer.m3u.stream.ui.language.LanguageAppFragment"-->
+<!--        android:label="fragment_language_app"-->
+<!--        tools:layout="@layout/fragment_language_app" />-->
+    <fragment
+        android:id="@+id/xtreamFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.xtream.XtreamFragment"
+        android:label="fragment_xtream"
+        tools:layout="@layout/fragment_xtream" />
+    <fragment
+        android:id="@+id/channelsFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.channels.ChannelsFragment"
+        android:label="fragment_channels"
+        tools:layout="@layout/fragment_channels" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.splash.SplashFragment"
+        android:label="SplashFragment" />
+    <fragment
+        android:id="@+id/liveFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.iptv_live.LiveFragment"
+        android:label="LiveFragment" />
+    <fragment
+        android:id="@+id/xtreamServerFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.xtream_server.XtreamServerFragment"
+        android:label="fragment_xtream_server"
+        tools:layout="@layout/fragment_xtream_server" />
+    <fragment
+        android:id="@+id/xtreamHomeFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.xtream_home.XtreamHomeFragment"
+        android:label="fragment_xtream_home"
+        tools:layout="@layout/fragment_xtream_home" />
+    <fragment
+        android:id="@+id/xtreamMovieFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.xtream_movie.XtreamMovieFragment"
+        android:label="fragment_xtream_movie"
+        tools:layout="@layout/fragment_xtream_movie" />
+    <fragment
+        android:id="@+id/xtreamMovieDetailFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.xtream_movie_detail.XtreamMovieDetailFragment"
+        android:label="fragment_xtream_movie_detail"
+        tools:layout="@layout/fragment_xtream_movie_detail" />
+    <fragment
+        android:id="@+id/fullVideoFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.full_video.FullVideoFragment"
+        android:label="fragment_full_video"
+        tools:layout="@layout/fragment_full_video" />
+    <fragment
+        android:id="@+id/seriesDetailFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.series_detail.SeriesDetailFragment"
+        android:label="fragment_series_detail"
+        tools:layout="@layout/fragment_series_detail" />
+    <fragment
+        android:id="@+id/episodeFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.episodeFragment.EpisodeFragment"
+        android:label="fragment_episode"
+        tools:layout="@layout/fragment_episode" />
+    <fragment
+        android:id="@+id/liveXtreamFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.livextream.LiveXtreamFragment"
+        android:label="fragment_live_xtream"
+        tools:layout="@layout/fragment_live_xtream" />
+    <fragment
+        android:id="@+id/streamFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.stream.StreamFragment"
+        android:label="fragment_stream"
+        tools:layout="@layout/fragment_stream" />
+    <fragment
+        android:id="@+id/searchXtreamFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.searchXtream.SearchXtreamFragment"
+        android:label="fragment_search_xtream"
+        tools:layout="@layout/fragment_search_xtream" />
+    <fragment
+        android:id="@+id/favouriteXtreamFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.favourite_xtream.FavouriteXtreamFragment"
+        android:label="fragment_favourite_xtream"
+        tools:layout="@layout/fragment_favourite_xtream" />
+    <fragment
+        android:id="@+id/addPlaylistFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.add_playlist.AddPlaylistFragment"
+        android:label="fragment_add_playlist"
+        tools:layout="@layout/fragment_add_playlist" />
+    <fragment
+        android:id="@+id/categoryChannelFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.home.category_channel.CategoryChannelFragment"
+        android:label="fragment_category_channel"
+        tools:layout="@layout/fragment_category_channel" />
+    <fragment
+        android:id="@+id/listChannelFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.home.list_channel.ListChannelFragment"
+        android:label="fragment_list_channel"
+        tools:layout="@layout/fragment_list_channel" />
+    <fragment
+        android:id="@+id/lisChannelFavouriteFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.home.list_channel_favourite.LisChannelFavouriteFragment"
+        android:label="fragment_lis_channel_favourite"
+        tools:layout="@layout/fragment_lis_channel_favourite" />
+    <fragment
+        android:id="@+id/watchChannelFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.watch_channel.WatchChannelFragment"
+        android:label="fragment_watch_channel"
+        tools:layout="@layout/fragment_watch_channel" />
+    <fragment
+        android:id="@+id/singleStreamFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.single_stream.SingleStreamFragment"
+        android:label="fragment_single_stream"
+        tools:layout="@layout/fragment_single_stream" />
+    <fragment
+        android:id="@+id/addGalleryFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.gallery.AddGalleryFragment"
+        android:label="fragment_add_gallery"
+        tools:layout="@layout/fragment_add_gallery" />
+    <fragment
+        android:id="@+id/popularChannelFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.home.list_popular.PopularChannelFragment"
+        android:label="fragment_popular_channel"
+        tools:layout="@layout/fragment_popular_channel" />
+    <fragment
+        android:id="@+id/passcodeXtreamFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.passcode_xtream.PasscodeXtreamFragment"
+        android:label="fragment_passcode_xtream"
+        tools:layout="@layout/fragment_passcode_xtream" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/editAvatarFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.profile_edit_avatar.EditAvatarFragment"
+        android:label="fragment_edit_avatar"
+        tools:layout="@layout/fragment_edit_avatar" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.profile_edit.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/howToYouFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.how_to_use.HowToYouFragment"
+        android:label="fragment_how_to_you"
+        tools:layout="@layout/fragment_how_to_you" />
+    <fragment
+        android:id="@+id/profileGeneralFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.profile_general.ProfileGeneralFragment"
+        android:label="ProfileGeneralFragment" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.profile_account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.intro.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" />
+    <fragment
+        android:id="@+id/IAPFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.iap.IAPFragment"
+        android:label="fragment_i_a_p"
+        tools:layout="@layout/fragment_i_a_p" />
+    <fragment
+        android:id="@+id/liveOpenFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.live_open.LiveOpenFragment"
+        android:label="LiveOpenFragment" />
+    <fragment
+        android:id="@+id/movieOpenFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.movie_open.MovieOpenFragment"
+        android:label="fragment_movie_open"
+        tools:layout="@layout/fragment_movie_open" />
+    <fragment
+        android:id="@+id/recentOpenFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.recent_open.RecentOpenFragment"
+        android:label="fragment_recent_open"
+        tools:layout="@layout/fragment_recent_open" />
+    <fragment
+        android:id="@+id/favouriteOpenFragment"
+        android:name="com.iptvplayer.m3u.stream.ui.favourite_open.FavouriteOpenFragment"
+        android:label="fragment_favourite_open"
+        tools:layout="@layout/fragment_favourite_open" />
+
+</navigation>

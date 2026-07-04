@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:elevation="@dimen/_16dp">
+
+
+        <ImageView
+            android:id="@+id/bg_dialog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_default_dialog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:fontFamily="@font/inter"
+            android:gravity="start"
+            android:text="@string/text_cannot_play_stream"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_the_stream_url_is_unavailable_or_invalid_please_try_reloading_or_go_back"
+            app:layout_constraintStart_toStartOf="@id/bg_dialog"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/inter"
+            android:background="@drawable/shape_delete"
+            android:paddingVertical="@dimen/_4sdp"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:text="@string/text_back"
+            android:textColor="#DA4545"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+        <TextView
+            android:id="@+id/btn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/inter"
+            android:text="Reload"
+            android:padding="@dimen/_4sdp"
+            android:background="@drawable/spinner_background_dialog"
+            android:textColor="?attr/myColorPrimary"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_back"
+            app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

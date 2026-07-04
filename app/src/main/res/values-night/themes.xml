@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IPTV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="materialSwitchStyle">@style/MyMaterialSwitch</item>
+        <item name="colorControlActivated">@color/color_primary_045DCC</item>
+        <item name="colorPrimary">@color/color_primary_045DCC</item>
+        <item name="colorPrimaryVariant">@color/color_primary_037EB9</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        <item name="colorSurface">@color/black</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <item name="myColorPrimary">@color/color_primary_045DCC</item>
+        <item name="myColorPrimaryVariant">@color/color_primary_037EB9</item>
+        <item name="myColorOnPrimary">@color/color_on_primary</item>
+        <item name="myColorSecondary">@color/color_primary_045DCC</item>
+        <item name="myColorSurface">@color/black</item>
+        <item name="myColorOnSurface">@color/white</item>
+        <item name="textSpecial">@color/white</item>
+        <item name="textDescriptionSpecial">@color/white</item>
+        <item name="textHint">@color/white</item>
+        <item name="textDescriptionMovie">#ffffff</item>
+        <item name="textTitle">@color/white</item>
+        <item name="iconColor">#ffffff</item>
+        <item name="colorBgBox">#323232</item>
+        <item name="colorBgBoxDescription">#323232</item>
+
+    </style>
+    <style name="AlertDialogDark" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorPrimary">#E53935</item>
+        <item name="buttonBarPositiveButtonStyle">@style/RedButton</item>
+    </style>
+    <style name="RedButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#E53935</item>
+    </style>
+
+    <style name="FullScreenBottomSheet" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/FullWidthBottomSheetStyle</item>
+        <item name="materialSwitchStyle">@style/MyMaterialSwitch</item>
+        <item name="colorSecondary">@color/color_primary_045DCC</item>
+
+        <item name="colorPrimary">@color/color_primary_045DCC</item>
+        <item name="colorPrimaryVariant">@color/color_primary_037EB9</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        <item name="myColorPrimary">@color/color_primary_045DCC</item>
+        <item name="myColorPrimaryVariant">@color/color_primary_037EB9</item>
+        <item name="myColorOnPrimary">@color/color_on_primary</item>
+        <item name="myColorSecondary">@color/color_primary_045DCC</item>
+        <item name="myColorSurface">@color/black</item>
+        <item name="myColorOnSurface">@color/white</item>
+        <item name="textSpecial">@color/white</item>
+        <item name="textDescriptionSpecial">@color/white</item>
+        <item name="textHint">@color/white</item>
+        <item name="textTitle">@color/white</item>
+
+    </style>
+
+    <style name="FullWidthBottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:maxWidth">9999dp</item>
+        <item name="shapeAppearanceOverlay">@style/BottomSheetCornerRadius</item>
+        <item name="backgroundTint">@color/black</item>
+
+    </style>
+
+    <style name="Theme.IPTV" parent="Base.Theme.IPTV">
+        <item name="bottomSheetDialogTheme">@style/FullScreenBottomSheet</item>
+    </style>
+</resources>

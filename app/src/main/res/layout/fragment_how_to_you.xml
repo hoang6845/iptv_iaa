@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/myColorSurface"
+    tools:context=".ui.how_to_use.HowToYouFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/btn_back"
+            app:tint="?attr/myColorOnSurface"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_how_to_use"
+            android:textColor="?attr/textTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        app:layout_constraintBottom_toTopOf="@id/bg"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <hoang.dqm.codebase.utils.CustomTabBar
+                android:id="@+id/tab_bar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="333:40"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <LinearLayout
+                android:id="@+id/bg_warn"
+                android:layout_width="match_parent"
+                android:background="?attr/colorBgBox"
+                app:layout_constraintTop_toBottomOf="@id/tab_bar"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:padding="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/information_circle" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/text_this_app_is_a_media_player_application_and_does_not_provide_any_content"
+                    android:textColor="?attr/myColorOnSurface"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginStart="@dimen/_4sdp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content_playlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:visibility="visible"
+                android:paddingBottom="@dimen/_24sdp"
+                android:clipToPadding="false"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg_warn"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/title_playlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_how_to_add_a_playlist"
+                    android:textColor="?attr/myColorOnSurface"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/title_playlist"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="1. Search for &quot;Free Popular IPTV Playlist&quot; in any search engine."            android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <TextView
+                    android:id="@+id/text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/text_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="2. Copy the &quot;.m3u&quot; playlist link or download the file."
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="751:460"
+                    android:src="@drawable/guide_playlist_1_w"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_2" />
+
+                <TextView
+                    android:id="@+id/text_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/img_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="3. Go back to the app. Click &quot;Add&quot; button, then select &quot;Add your playlist&quot; and paste the link."
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="930:444"
+                    android:src="@drawable/guide_playlist_2_w"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_3" />
+
+                <TextView
+                    android:id="@+id/text_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/img_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_4_enjoy_your_iptv_shows"
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="888:885"
+                    android:src="@drawable/guide_playlist_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content_xtream"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:visibility="visible"
+                android:paddingBottom="@dimen/_24sdp"
+                android:clipToPadding="false"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg_warn"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/title_xtream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_how_to_add_a_xtream_account"
+                    android:textColor="?attr/myColorOnSurface"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_1_xtream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/title_xtream"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Search for &quot;Free Popular Xtream Account&quot; in any search engine."
+                android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_1_xtream"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="932:881"
+                    android:src="@drawable/guide_xtream_1_w"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_1_xtream" />
+
+                <TextView
+                    android:id="@+id/text_2_xtream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/img_1_xtream"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="2. Find and copy the “host, username and password” of the Xtream account."
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_2_xtream"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="932:881"
+                    android:src="@drawable/guide_xtream_2_w"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_2_xtream" />
+
+                <TextView
+                    android:id="@+id/text_3_xtream"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/img_2_xtream"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="3. Go back to the app. Click &quot;Add&quot; button, then select &quot;Add your Xtream account&quot; and paste the link."
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_3_xtream"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="932:845"
+                    android:src="@drawable/guide_xtream_3_w"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_3_xtream" />
+
+                <TextView
+                    android:id="@+id/text_4_xtream"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/img_3_xtream"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_enjoy_your_shows_browse_through_the_categories_and_start_watching"
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+                <ImageView
+                    android:id="@+id/img_4_xtream"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="932:845"
+                    android:src="@drawable/guide_xtream_4_w"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_4_xtream" />
+
+                <TextView
+                    android:id="@+id/text_5_xtream"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/img_4_xtream"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:text="@string/text_tips_if_login_fails_the_server_might_be_expired_or_at_its_user_limit_try_a_different_set_of_credentials"
+                    android:textColor="@color/color_primary_045DCC"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content_file"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:visibility="visible"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg_warn"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/title_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_how_to_add_a_file"
+                    android:textColor="?attr/myColorOnSurface"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_1_file"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/title_file"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Search for &quot;M3U File&quot; in any search engine."
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <TextView
+                    android:id="@+id/text_2_file"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/text_1_file"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_2_download_the_file"
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+
+                <TextView
+                    android:id="@+id/text_3_file"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/text_2_file"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_3_go_back_to_the_app_browse_your_device_storage_and_select_the_file"
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_1_file"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="932:833"
+                    android:src="@drawable/guide_file_1_w"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_3_file" />
+
+                <TextView
+                    android:id="@+id/text_4_file"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    app:layout_constraintTop_toBottomOf="@id/img_1_file"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="@string/text_4_enjoy_your_iptv_shows"
+                    android:textColor="?attr/myColorOnSurface"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="?attr/myColorSurface"
+        app:layout_constraintDimensionRatio="360:120"
+        app:layout_constraintBottom_toBottomOf="parent"
+       >
+
+        <TextView
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/bg_btn"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="@string/text_search_in_browser"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintDimensionRatio="321:54"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

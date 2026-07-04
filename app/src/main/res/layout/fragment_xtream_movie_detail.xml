@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/myColorSurface"
+    tools:context=".ui.xtream_movie_detail.XtreamMovieDetailFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_suggest_movie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="1280:720"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_close"
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:background="@color/transparent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="Favourite"
+                    app:tint ="@color/white"
+                    android:src="@drawable/ic_close"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_star"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/container_suggest_movie"
+                app:layout_constraintWidth_percent="0.3"
+                app:spanCount="5"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_star" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/container_suggest_movie"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                android:textColor="?attr/myColorOnSurface"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp"
+                tools:text="name"/>
+
+            <TextView
+                android:id="@+id/release_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/inter"
+                android:textColor="?attr/myColorOnSurface"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                tools:text="11-02-2026" />
+
+            <TextView
+                android:id="@+id/dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/inter"
+                android:text=" · "
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toEndOf="@id/release_day"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/inter"
+                android:textColor="?attr/myColorOnSurface"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toEndOf="@id/dot"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                tools:text="96'" />
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/inter"
+                android:textColor="?attr/myColorOnSurface"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:layout_constraintStart_toEndOf="@id/duration"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                tools:text="Action, Thriller, Crime" />
+
+            <TextView
+                android:id="@+id/trailers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="@string/text_trailer"
+                android:textColor="?attr/myColorOnSurface"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/genre" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_trailer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="4dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/trailers"
+                app:layout_constraintWidth_percent="0.6">
+
+                <ImageView
+                    android:id="@+id/img_trailer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/btn_play"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/bg_btn"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@id/btn_favourite"
+                app:layout_constraintTop_toBottomOf="@id/card_trailer"
+                app:layout_constraintDimensionRatio="270:48"
+                app:layout_constraintStart_toStartOf="@id/guide_start" />
+
+            <ImageButton
+                android:id="@+id/btn_favourite"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:background="@color/transparent"
+                app:layout_constraintTop_toTopOf="@id/btn_play"
+                app:layout_constraintEnd_toEndOf="@id/guide_end"
+                android:contentDescription="Favourite"
+                android:src="@drawable/ic_favourite_detail"
+                />
+
+            <ImageButton
+                android:id="@+id/ic_play"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@null"
+                android:src="@drawable/ic_play"
+                app:layout_constraintEnd_toStartOf="@id/text_play"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toTopOf="@id/btn_play"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/btn_play" />
+
+            <TextView
+                android:id="@+id/text_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_play"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintTop_toTopOf="@id/btn_play"
+                app:layout_constraintBottom_toBottomOf="@id/btn_play"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toEndOf="@id/ic_play"
+                app:layout_constraintEnd_toEndOf="@id/btn_play"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:textColor="?attr/myColorOnSurface"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@id/guide_end"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/btn_play"
+                tools:text="Trust frays when a team of Miami cops discovers millions in cash inside a run-down stash house, calling everyone — and everything — into question." />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:visibility="gone"
+                android:background="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="@string/text_suggested"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textAllCaps="true"
+                android:textColor="?attr/myColorOnSurface"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="@id/guide_end"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/line" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_movie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@id/guide_end"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/more"
+                tools:listitem="@layout/item_movie_suggested" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/inter"
+                android:text="@string/text_details"
+                android:textColor="?attr/myColorOnSurface"
+                android:textSize="@dimen/_14ssp"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintTop_toBottomOf="@id/rv_movie" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="?attr/myColorSurface"
+                app:strokeWidth="@dimen/_1sdp"
+                app:strokeColor="#889DB8"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@id/details"
+                app:layout_constraintStart_toStartOf="@id/guide_start"
+                app:layout_constraintEnd_toEndOf="@id/guide_end">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_14ssp"
+                        tools:text="name"/>
+
+                    <TextView
+                        android:id="@+id/description_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/name_1"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_14ssp"
+                        tools:text="Trust frays when a team of Miami cops discovers millions in cash inside a run-down stash house, calling everyone — and everything — into question." />
+
+                    <TextView
+                        android:id="@+id/title_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/description_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_14ssp"
+                        android:text="@string/text_duration"
+                        />
+
+                    <TextView
+                        android:id="@+id/duration_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/title_duration"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        tools:text="96'"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/title_release"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/duration_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:textSize="@dimen/_14ssp"
+                        android:text="@string/text_release_date"
+                        />
+
+                    <TextView
+                        android:id="@+id/release_day_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/title_release"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        tools:text="16-02-2025"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/title_genre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/release_day_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:textSize="@dimen/_14ssp"
+                        android:text="@string/text_genre"
+                        />
+
+                    <TextView
+                        android:id="@+id/genre_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/title_genre"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        tools:text="Action, Thriller, Crime"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/title_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/genre_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:textSize="@dimen/_14ssp"
+                        android:text="@string/text_rating"
+                        />
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/title_rating"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        tools:text="7.7/10"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/title_actor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/rating"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:textSize="@dimen/_14ssp"
+                        android:text="@string/text_actor"
+                        />
+
+                    <TextView
+                        android:id="@+id/actor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/title_actor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        tools:text="7.7/10"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/title_cast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/actor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:textSize="@dimen/_14ssp"
+                        android:text="@string/text_cast"
+                        />
+
+                    <TextView
+                        android:id="@+id/cast"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@id/title_cast"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        tools:text="7.7/10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:textSize="@dimen/_14ssp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

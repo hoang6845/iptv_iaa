@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="@dimen/_12dp"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/spinner_dropdown_background"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:id="@+id/ic_category"
+            android:layout_width="@dimen/_58sdp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:src="@drawable/ic_animation"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/shape_number"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/num_channels"/>
+
+        <TextView
+            android:id="@+id/num_channels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="57"
+            android:background="@drawable/shape_text_num"
+            android:paddingHorizontal="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/ic_category"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        tools:text="All category"
+        app:layout_constraintTop_toBottomOf="@id/bg_img"
+        android:gravity="center"
+        android:id="@+id/text_channel"
+        android:fontFamily="@font/inter"
+        android:textSize="@dimen/_12ssp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

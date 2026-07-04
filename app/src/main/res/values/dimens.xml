@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pip_width">240dp</dimen>
+    <dimen name="pip_height">135dp</dimen>
+
+</resources>

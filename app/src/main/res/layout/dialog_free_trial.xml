@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:elevation="@dimen/_16dp">
+
+
+        <ImageView
+            android:id="@+id/bg_dialog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_default_dialog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.66" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="@string/text_are_you_sure_you_want_to_skip_the_free_trial"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+            app:layout_constraintStart_toStartOf="@id/bg_dialog"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_36sdp"
+            app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:gravity="center"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_claim_your_free_trial_now_without_paying"
+            app:layout_constraintStart_toStartOf="@id/bg_dialog"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/btn_not_now"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:fontFamily="@font/inter"
+            android:text="@string/text_not_now"
+            app:layout_constraintTop_toBottomOf="@id/text_name"
+            android:background="@drawable/shape_text_notnow"
+            android:gravity="center"
+            android:textColor="@color/color_primary_045DCC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toEndOf="@id/btn_start"
+            app:layout_constraintEnd_toEndOf="@id/bg_dialog"
+            />
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:fontFamily="@font/inter"
+            android:background="@drawable/shape_text_trial"
+            android:gravity="center"
+            android:text="@string/text_start_free_trial"
+            android:textColor="@color/color_primary_045DCC"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/bg_dialog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_not_now"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

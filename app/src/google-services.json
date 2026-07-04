@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "997803200434",
+    "project_id": "iptv-android-iaa",
+    "storage_bucket": "iptv-android-iaa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997803200434:android:1e20dae5f6044adee39eab",
+        "android_client_info": {
+          "package_name": "com.iptvplayer.m3u.stream"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTvlvil1OlkQK12LC2jvIRpWzIsNrWs48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
