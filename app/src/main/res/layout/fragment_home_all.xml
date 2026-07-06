@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/myColorSurface"
-    android:paddingBottom="@dimen/_60sdp"
     android:clipToPadding="false"
     tools:context=".ui.home.home_all.HomeAllFragment">
 
@@ -19,7 +18,6 @@
             android:layout_height="match_parent"
             tools:visibility="visible"
             android:visibility="gone"
-            android:paddingBottom="@dimen/_36sdp"
             android:clipToPadding="false"
             >
 
@@ -129,6 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/inter"
+                android:visibility="gone"
                 android:gravity="center"
                 android:text="@string/text_how_to_add_a_playlist_in_iptv_player"
                 android:textColor="?attr/textHint"
@@ -141,6 +140,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/btn_guide_1"
                 android:layout_width="0dp"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_12sdp"
@@ -156,6 +156,7 @@
                     android:fontFamily="@font/inter"
                     android:gravity="center"
                     android:padding="@dimen/_1sdp"
+                    android:visibility="gone"
                     android:textStyle="bold"
                     android:text="1"
                     android:textColor="?attr/colorPrimary"
@@ -170,6 +171,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_6sdp"
                     android:layout_marginTop="@dimen/_4sdp"
+                    android:visibility="gone"
                     android:fontFamily="@font/inter"
                     android:textStyle="bold"
                     android:text="@string/text_find_an_m3u_playlist"
@@ -181,6 +183,7 @@
                 <TextView
                     android:layout_width="@dimen/_235sdp"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:layout_marginStart="@dimen/_6sdp"
                     android:fontFamily="@font/inter"
                     android:text="@string/text_search_online_for_a_publicly_available_iptv_playlist_m3u"
@@ -194,6 +197,7 @@
                 android:id="@+id/btn_guide_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_12sdp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -245,6 +249,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/btn_guide_3"
                 android:layout_width="0dp"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_12sdp"
@@ -298,6 +303,7 @@
                 android:id="@+id/btn_guide_4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_12sdp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -403,7 +409,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 tools:visibility="gone"
-                android:paddingBottom="@dimen/_80sdp"
                 android:clipToPadding="false"
                 android:layout_marginHorizontal="@dimen/_12sdp"
                 tools:listitem="@layout/item_playlist"
