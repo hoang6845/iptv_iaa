@@ -59,8 +59,8 @@ class IntroFragment : BaseFragment<FragmentIntroBinding, IntroViewModel>() {
 
             getLayoutResId = { _, position ->
                 when (position) {
-                    0 -> R.layout.item_intro_ad
-                    1 -> R.layout.item_intro
+                    0 -> R.layout.item_intro
+                    1 -> R.layout.item_intro_ad
                     2 -> R.layout.full_native
                     3 -> R.layout.item_intro
                     4 -> R.layout.item_intro_ad

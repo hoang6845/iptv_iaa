@@ -56,17 +56,17 @@ class HowToYouFragment : BaseFragment<FragmentHowToYouBinding, HowToUseViewModel
             items = listOf(
                 TabButton.TabBarItem(
                     title = getString(R.string.text_playlist_cap),
-                    unselectedTextColor = requireContext().getAttrColor(R.attr.textHint),
+                    unselectedTextColor = Color.WHITE,
                     selectedTextColor = Color.WHITE
                 ),
                 TabButton.TabBarItem(
                     title = getString(R.string.text_xtream_cap),
-                    unselectedTextColor =requireContext().getAttrColor(R.attr.textHint),
+                    unselectedTextColor =Color.WHITE,
                     selectedTextColor = Color.WHITE
                 ),
                 TabButton.TabBarItem(
                     title = getString(R.string.text_file_cap),
-                    unselectedTextColor =requireContext().getAttrColor(R.attr.textHint),
+                    unselectedTextColor =Color.WHITE,
                     selectedTextColor = Color.WHITE
                 )
             ),

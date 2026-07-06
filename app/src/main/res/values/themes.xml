@@ -15,7 +15,7 @@
         <item name="myColorPrimaryVariant">@color/color_primary_037EB9</item>
         <item name="myColorOnPrimary">@color/color_on_primary</item>
         <item name="myColorSecondary">@color/color_primary_045DCC</item>
-        <item name="myColorSurface">#18202B</item>
+        <item name="myColorSurface">#161E2A</item>
         <item name="myColorOnSurface">@color/white</item>
         <item name="textSpecial">#1F2937</item>
         <item name="textDescriptionSpecial">#4A5565</item>

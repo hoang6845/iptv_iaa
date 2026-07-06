@@ -13,13 +13,14 @@
         app:layout_constraintDimensionRatio="110:110"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#D1D5DB"
+        android:background="@color/transparent"
         app:shapeAppearanceOverlay="@style/CircleImage" />
 
     <ImageView
         android:id="@+id/avatar"
         android:src="@drawable/avatar_default"
         android:layout_width="0dp"
+        app:layout_constraintDimensionRatio="110:110"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/img"
         app:layout_constraintTop_toTopOf="@id/img"
